@@ -59,14 +59,17 @@ function calcTotalPrice(e){
     alart("Your order of" + number() + "order has been processed.Your total amount payable is"+ totalPrice + "")
 }
  
-$(document).ready(function ship() {
+$(document).ready(function (){
+$('#detail').submit(function(){
+    var name = $("input#name").val();
+    var number = $("input#quantity").val();
+    var location = $("input#location").val();
+    var cost = $("input#pizza-size").val();
+    var total = parseInt(number) *parseInt (cost);
+    alert("Hello " + name + ". Your order of " + number + "pizzas  has been successfuly received and will be delivered to " + location + "total cost " + total+" within one hour.The delivery will cost ksh 80/= Thank you for chosing pizza planet.");
+    $("#shipping").click () 
 
-        var name = $("input#name").val();
-        var number = $("input#digits").val();
-        var location = $("input#location").val();
 
-        alert("Hello " + name + ". Your order of " + number + "pizzas  has been successfuly received and will be delivered to " + location + " within one hour.The delivery will cost ksh 80/= Thank you for chosing pizza planet.");
-        $("#shipping").click () 
-
+})
 
 });
