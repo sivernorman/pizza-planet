@@ -65,7 +65,7 @@ $('#detail').submit(function(){
     var number = $("input#quantity").val();
     var location = $("input#location").val();
     var cost = $("input#pizza-size").val();
-    var total = parseInt(number) *parseInt (cost);
+    var total = parseInt(number) *parseInt(cost);
     alert("Hello " + name + ". Your order of " + number + "pizzas  has been successfuly received and will be delivered to " + location + "total cost " + total+" within one hour.The delivery will cost ksh 80/= Thank you for chosing pizza planet.");
     $("#shipping").click () 
 

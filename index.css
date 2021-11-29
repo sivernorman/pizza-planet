@@ -77,7 +77,7 @@ border-radius: 30px;
 .bottom{
     padding-top: 2rem;
 }
-/*  .footer{
+ .footer{
      background-color: #24262b;
      padding: 70px 0;
      padding-top: 5rem;
@@ -144,7 +144,7 @@ margin: 0 10px 10px 0;
  .social-links a i{
      margin: 10px;
  }
- /* responsieve */
+  /* responsieve */
  @media(max-width:767px){
     .footer-col {
         width: 50%;
